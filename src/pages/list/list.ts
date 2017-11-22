@@ -1,9 +1,7 @@
 import {Component} from '@angular/core';
 import {ActionSheetController, IonicPage, NavController, NavParams} from 'ionic-angular';
-import {AddListPage} from '../add-list/add-list';
 import {AngularFireDatabase, FirebaseListObservable} from 'angularfire2/database-deprecated';
 import {ListItem} from "../../models/list/list-item.interface";
-import {EditListPage} from "../edit-list/edit-list";
 
 
 // for lazy loading your thingies
