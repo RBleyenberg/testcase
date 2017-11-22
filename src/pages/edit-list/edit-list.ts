@@ -3,7 +3,7 @@ import {NavController, NavParams} from 'ionic-angular';
 import {AngularFireDatabase, FirebaseObjectObservable} from "angularfire2/database-deprecated";
 import {ListItem} from "../../models/list/list-item.interface";
 import {Subscription} from "rxjs/Subscription";
-// hello
+
 
 @Component({
   selector: 'page-edit-list',
