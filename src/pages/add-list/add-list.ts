@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import { ListItem } from '../../models/list/list-item.interface';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database-deprecated';
 
+// for lazy loading your thingies
+@IonicPage()
 @Component({
   selector: 'page-add-list',
   templateUrl: 'add-list.html',

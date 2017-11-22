@@ -1,10 +1,12 @@
 import {Component} from '@angular/core';
-import {NavController, NavParams} from 'ionic-angular';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {AngularFireDatabase, FirebaseObjectObservable} from "angularfire2/database-deprecated";
 import {ListItem} from "../../models/list/list-item.interface";
 import {Subscription} from "rxjs/Subscription";
 
 
+// for lazy loading your thingies
+@IonicPage()
 @Component({
   selector: 'page-edit-list',
   templateUrl: 'edit-list.html',

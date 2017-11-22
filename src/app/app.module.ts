@@ -10,16 +10,10 @@ import { AngularFireDatabaseModule } from 'angularfire2/database-deprecated'
 import { FIREBASE_CREDENTIALS } from './firebase.credentials'
 
 import { MyApp } from './app.component';
-import { ListPage } from '../pages/list/list';
-import { AddListPage } from './../pages/add-list/add-list';
-import { EditListPage } from "../pages/edit-list/edit-list";
 
 @NgModule({
   declarations: [
-    MyApp,
-    ListPage,
-    AddListPage,
-    EditListPage
+    MyApp
   ],
   imports: [
     BrowserModule,
@@ -29,10 +23,7 @@ import { EditListPage } from "../pages/edit-list/edit-list";
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    ListPage,
-    AddListPage,
-    EditListPage
+    MyApp
   ],
   providers: [
     StatusBar,

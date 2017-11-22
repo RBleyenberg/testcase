@@ -1,10 +1,13 @@
 import {Component} from '@angular/core';
-import {ActionSheetController, NavController, NavParams} from 'ionic-angular';
+import {ActionSheetController, IonicPage, NavController, NavParams} from 'ionic-angular';
 import {AddListPage} from '../add-list/add-list';
 import {AngularFireDatabase, FirebaseListObservable} from 'angularfire2/database-deprecated';
 import {ListItem} from "../../models/list/list-item.interface";
 import {EditListPage} from "../edit-list/edit-list";
 
+
+// for lazy loading your thingies
+@IonicPage()
 @Component({
   selector: 'page-list',
   templateUrl: 'list.html',
@@ -29,7 +32,7 @@ export class ListPage {
       buttons: [{
         text: 'edit',
         handler: () => {
-          this.navCtrl.push(EditListPage, {listItemId: listItem.$key});
+          this.navCtrl.push('EditListPage', {listItemId: listItem.$key});
         }
       },
         {
@@ -52,7 +55,7 @@ export class ListPage {
   }
 
   navigateToAddList() {
-    this.navCtrl.push(AddListPage)
+    this.navCtrl.push('AddListPage')
   }
 
 }
